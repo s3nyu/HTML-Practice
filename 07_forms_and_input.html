@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <form action="process.php">
+
+        <!-- text -->
+        <div>
+            <label for = "name"> Name</label><br>
+            <input type = "text" id="name" name="name" placeholder="insert your name">
+        </div><br>
+
+        <!-- email -->
+        <div>
+            <label for = "email"> Email</label><br>
+                <input type = "email" id="email" name="email" placeholder="insert your e-mail">
+        </div><br>
+        
+        <!-- message -->
+        <div>
+            <label for = "message"> Message</label>
+            <textarea name = "message" id="message" cols="50" rows="5" placeholder="insert message"> </textarea>
+        </div>
+
+        <!-- select -->
+        <div>
+            <label for = "sex"> Sex</label><br>
+                <select name = "sex" id = "sex">
+                    <!-- selected means default option -->
+                <option value = "select" selected> Select gender </option>
+                <option value = "male"> Male </option>
+                <option value = "female"> Female </option>
+                </select>
+        </div><br>
+
+        <!-- number -->
+        <div>
+            <label for = "age"> Age </label><br>
+            <input type="number" name="age" id="age">
+        </div><br>
+
+        <!-- date -->
+        <div>
+            <label for="birthdate"> Birthdate </label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div><br>
+        
+        <!-- radio button -->
+        <div>
+            <label for="membership"> Membership </label><br>
+            <!-- checked = default option -->
+            <input type="radio" name="membership" value="free" checked> Free
+            <input type="radio" name="membership" value="standard"> Standard
+            <input type="radio" name="membership" value="exclusive"> Exclusive
+        </div><br>
+
+        <!-- checkbox -->
+        <div>
+            <label for="hobby"> Hobby </label><br>
+            <!-- checked = default option -->
+            <input type="checkbox" name="hobby" value="travel" checked> Travel <br>
+            <input type="checkbox" name="hobby" value="art"> Art <br>
+            <input type="checkbox" name="hobby" value="music"> Music <br>
+            <input type="checkbox" name="hobby" value="culinary"> Culinary <br>
+            <input type="checkbox" name="hobby" value="game"> Game
+        </div><br>
+
+        <!-- input submit -->
+        <input type="submit">
+
+        <!-- button submit -->
+        <!-- <button type="submit"> Submit</button> -->
+
+        <!-- reset button -->
+        <button type="reset"> Reset </button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- use id only for one, dont repeat id -->
+<!-- use class if you want to repeat -->
+
+<!-- div = block level element -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, span, id and class</title>
+
+    <style>
+        /* this is class, we can have as many cards as we want */
+
+        .card{
+            border: 1px solid#ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .enhance{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main-header" class="card">
+        <h1> My Website</h1>
+        <p> a site about me</p>
+    </div>
+
+    <ul id="main-nav">
+        <li> <a href="#"> Home </a> </li>
+        <li> <a href="#"> About </a> </li>
+        <li> <a href="#"> Contact </a> </li>
+    </ul>
+    
+    <!-- create div using emeet -->
+    <!-- #about -->
+    <div id="about" class="card">
+        <h3> About </h3>
+        <p> (STANDARD) Lorem ipsum dolor sit consectetur adipisicing elit. Eius maxime saepe fugit nulla officia qui, numquam earum sit, recusandae asperiores sint ratione, labore aspernatur animi!</p>
+        <!-- enhance blocks it to the next line -->
+        <p> (DIV ENHANCE)Lorem ipsum dolor sit <div class="enhance"> consectetur adipisicing elit. Eius maxime saepe fugit nulla officia qui </div>, numquam earum sit, recusandae asperiores sint ratione, labore aspernatur animi!</p>
+        <p> (SPAN ENHANCE)Lorem ipsum dolor sit <span class="enhance"> consectetur adipisicing elit. Eius maxime saepe fugit nulla officia qui </span>, numquam earum sit, recusandae asperiores sint ratione, labore aspernatur animi!</p>
+    </div>
+
+    <div id="contact" class="card">
+        <h3> Contact Me</h3>
+        <ul>
+            <li> Adress : Colossus </li>
+            <li> Phone : 0812-3456-7890 </li>
+            <li> Email : beryl@byakuya.com </li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <p> Copyright &copy; 2022 </p>
+    </div>
+
+</body>
+</html>
